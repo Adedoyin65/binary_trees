@@ -32,7 +32,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 		}
 		else
 		{
-			tmp = malloc(sizeof(struct binary_tree_s));
+			tmp = parent->left;
 			tmp->n = parent->left->n;
 			tmp->parent = new;
 			tmp->left = NULL;
